@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>BlackJack</title>
+</head>
+
+<body>
+  <section id="blackJack">
+    <header>
+      <h1>BlackJack</h1>
+    </header>
+    <button type="button" value="Reload Page" onClick="window.location.reload();" id="message"></button>
+    <div id="table">
+      <h2>Your cards</h2>
+      <div id="playersCards"></div>
+      <h2>Croupier cards</h2>
+      <div id="dealersCards"></div>
+    </div>
+    <div id="points">
+      Your points
+      <div id="playerPoints"></div>
+      Croupier points
+      <div id="dealerPoints"></div>
+    </div>
+    <div id="buttons">
+      <button id="hit">Pick up card</button>
+      <button id="stand">Leave</button>
+    </div>
+  </section>
+
+  <script type="module" src="./app/Game.js"></script>
+</body>
+
+</html>
